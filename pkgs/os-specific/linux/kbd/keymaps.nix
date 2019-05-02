@@ -19,11 +19,11 @@
   };
 
   neo = stdenv.mkDerivation rec {
-    name = "neo-${version}";
+    pname = "neo-${version}";
     version = "2476";
 
     src = fetchurl {
-      pname = "neo.map";
+      name = "neo.map";
       url = "https://raw.githubusercontent.com/neo-layout/neo-layout/"
           + "a0dee06fed824abfad658b7f10e6d907b270be0a/linux/console/neo.map";
       sha256 = "19mfrd31vzpsjiwc7pshxm0b0sz5dd17xrz6k079cy4im1vf0r4g";
